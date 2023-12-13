@@ -53,6 +53,7 @@ def main():
         input_data['SibSp'] = st.number_input("Passenger's siblings onboard", step=1)
         input_data['Parch'] = st.number_input("Passenger's Parents and Children Onboard", step=1)
         
+
         
     input_df = pd.DataFrame([input_data]).reset_index(drop=True)
     st.write(input_df) # Display collected data
